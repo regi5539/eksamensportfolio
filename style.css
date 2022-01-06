@@ -132,13 +132,21 @@ h1 {
 
 /* Anden farve ved hover-funktion og når den er trykket på (javascript) add btn_pushed class*/
 .btn_pushed,
-.fold_ud:hover {
+.btn_port:hover {
   background-color: #ccc;
 }
 
 /* Styling af opg. beskrivelse */
 .opg_beskrivelse {
   display: none;
+}
+
+.fold_ud {
   overflow: hidden;
   background-color: #f1f1f1;
+  border-top: 1px solid #483434;
+  padding-top: 1rem;
+  display: flex;
+  flex: 1 1 100%;
+  flex-flow: column;
 }

@@ -34,27 +34,27 @@ function MenuClick() {
 // ----------------------portfolio------------------------
 
 const btn_port = document.querySelector(".btn_port");
-const indhold = document.querySelector("opg_beskrivelse");
+const indhold = document.querySelector(".opg_beskrivelse");
 
 // Lav en function, der hedder toggleMenu()
 function toggleOpg() {
   console.log("toggleOpg");
   // 1. Toggle en klasse på nav vha. classList.toggle
   // 2. Toggle en klasse, der hedder "shown"
-  indhold.classList.toggle("opg_beskrivelse");
+  indhold.classList.toggle("fold_ud");
   // 1. Lav en variabel, der hedder menuShown
   // 2. Den skal være lig med, om nav-variablen indeholder klassen "shown" vha. classList.contains("")
-  let opgShown = classList.contains("opg_beskrivelse");
+  let opgShown = indhold.classList.contains("fold_ud");
   // 1. Lav en if/else sætning => if (...) {...} else {...}
   // 2. Spørg om menu i if-sætningen => if (menu)
   if (opgShown) {
     // hvis nav har klassen "shown", sæt da btn.textContent til "Luk"
-    btn.textContent = "Luk";
+    btn_port.textContent = "Luk";
   } else {
     // hvis IKKE nav har klassen "shown", sæt da btn.textContent til "Menu"
-    btn.textContent = "Menu";
+    btn_port.textContent = "Menu";
   }
 }
 
 /* Tilføj et klik-event til btn, der sætter toggleMenu-funktionen i gang */
-btn.addEventListener("click", toggleMenu);
+btn_port.addEventListener("click", toggleOpg);
