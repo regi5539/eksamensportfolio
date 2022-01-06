@@ -105,16 +105,21 @@ main {
   /* display: grid;
   grid-template-columns: 1fr minmax(200px, 900px) 1fr; */
   grid-column: 2/3;
+  padding: 2rem;
 }
 
 .center_content {
   /* grid-column: 2/3; */
   display: grid;
-  grid-template-columns: 1fr minmax(200px, 900px) 1fr;
+  grid-template-columns: minmax(1rem, 1fr) minmax(200px, 900px) minmax(
+      1rem,
+      1fr
+    );
 }
 
 h1 {
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 /* --------------portfolio------------------------ */
@@ -147,6 +152,17 @@ h1 {
   border-top: 1px solid #483434;
   padding-top: 1rem;
   display: flex;
-  flex: 1 1 100%;
   flex-flow: column;
+}
+
+@media (min-width: 500px) {
+  h1 {
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 800px) {
+  h1 {
+    padding-bottom: 8rem;
+  }
 }
