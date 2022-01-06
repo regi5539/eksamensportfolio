@@ -102,14 +102,11 @@ header {
 }
 
 main {
-  /* display: grid;
-  grid-template-columns: 1fr minmax(200px, 900px) 1fr; */
   grid-column: 2/3;
-  padding: 2rem;
+  padding-bottom: 4rem;
 }
 
 .center_content {
-  /* grid-column: 2/3; */
   display: grid;
   grid-template-columns: minmax(1rem, 1fr) minmax(200px, 900px) minmax(
       1rem,
@@ -119,7 +116,11 @@ main {
 
 h1 {
   text-align: center;
-  padding-bottom: 2rem;
+  padding: 4rem 0 2rem 0;
+}
+
+footer {
+  padding: 0.5rem;
 }
 
 /* --------------portfolio------------------------ */
@@ -177,10 +178,18 @@ h1 {
   h1 {
     padding-bottom: 4rem;
   }
+
+  main {
+    padding: 0 1rem 0 1rem;
+  }
 }
 
 @media (min-width: 800px) {
   h1 {
     padding-bottom: 8rem;
+  }
+
+  main {
+    padding: 0 2rem 0 2rem;
   }
 }
