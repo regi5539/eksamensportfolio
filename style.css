@@ -125,7 +125,13 @@ h1 {
 /* --------------portfolio------------------------ */
 
 /* button styling */
-.btn_port {
+.btn_port1,
+.btn_port2,
+.btn_port3,
+.btn_port4,
+.btn_port5,
+.btn_port6,
+.btn_port7 {
   background-color: #eee;
   color: #444;
   cursor: pointer;
@@ -137,12 +143,24 @@ h1 {
 
 /* Anden farve ved hover-funktion og når den er trykket på (javascript) add btn_pushed class*/
 .btn_pushed,
-.btn_port:hover {
+.btn_port1:hover,
+.btn_port2:hover,
+.btn_port3:hover,
+.btn_port4:hover,
+.btn_port5:hover,
+.btn_port6:hover,
+.btn_port7:hover {
   background-color: #ccc;
 }
 
 /* Styling af opg. beskrivelse */
-.opg_beskrivelse {
+.opg_beskrivelse1,
+.opg_beskrivelse2,
+.opg_beskrivelse3,
+.opg_beskrivelse4,
+.opg_beskrivelse5,
+.opg_beskrivelse6,
+.opg_beskrivelse7 {
   display: none;
 }
 
