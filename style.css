@@ -360,6 +360,37 @@ h3 {
 } */
 
 #forside_tekst1_1 {
+  color: #b9b9b9;
+  font-size: 12rem;
+  font-weight: 800;
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  /* opacity: 40%; */
+  padding: unset;
+}
+#forside_tekst1_2 {
+  color: #b9b9b9;
+  font-size: 9rem;
+  font-weight: 800;
+  position: absolute;
+  top: 40%;
+  left: 8%;
+  /* opacity: 40%; */
+  padding: unset;
+}
+#forside_tekst1_3 {
+  color: #b9b9b9;
+  font-size: 12rem;
+  font-weight: 800;
+  position: absolute;
+  top: 78%;
+  left: 8%;
+  /* opacity: 40%; */
+  padding: unset;
+}
+
+/* #forside_tekst1_1 {
   color: red;
   font-size: 6rem;
   font-weight: 800;
@@ -386,9 +417,18 @@ h3 {
   top: 10.5%;
   left: 10.5%;
   opacity: 40%;
-}
+} */
 
 .forside_tekst2_1 {
+  color: #b9b9b9;
+  font-size: 4rem;
+  font-weight: 800;
+  position: absolute;
+  top: 30%;
+  left: 8.8%;
+  padding: unset;
+}
+/* .forside_tekst2_1 {
   color: red;
   font-size: 6rem;
   font-weight: 800;
@@ -415,7 +455,7 @@ h3 {
   top: 32%;
   left: 59%;
   opacity: 40%;
-}
+} */
 
 /* -------------------------------------om mig----------------------------------------------- */
 
@@ -497,7 +537,7 @@ h3 {
 
   .ommig_content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 3fr;
   }
 
   .portraet_ommig {
@@ -505,5 +545,6 @@ h3 {
   }
 
   .personlig_tekst {
+    grid-column: 2/3;
   }
 }
