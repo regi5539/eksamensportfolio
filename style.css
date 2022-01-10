@@ -105,6 +105,19 @@ nav li {
   padding: 1rem;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:active {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+a:hover {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
 a:visited {
   color: #b9b9b9;
 }
@@ -121,7 +134,7 @@ body {
 }
 
 main {
-  padding-bottom: 12rem;
+  padding-bottom: 6rem;
 }
 
 .center_content {
@@ -159,11 +172,13 @@ h3 {
 } */
 
 .footer_index {
-  padding: 0.5rem;
+  padding: 0.3rem;
   color: #b9b9b9;
   position: absolute;
-  bottom: 1%;
-  left: 80%;
+  text-align: right;
+  top: 96%;
+  right: 1%;
+  font-size: 0.7rem;
 }
 
 .footer_portfolio {
@@ -533,7 +548,7 @@ h3 {
 
 .cv {
   width: 100%;
-  height: 1200px;
+  min-height: 100px;
   box-shadow: 1px 4px 15px #0c0c0c, -1px -3px 10px #414141;
   border-radius: 20px;
   background: #1d1d1d;
@@ -546,15 +561,42 @@ h3 {
 
 .cv h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 1rem;
 }
 
+.cv h3 {
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 1rem;
+}
+.cv h4 {
+  padding: 1.3rem 0.5rem 0 0.5rem;
+}
 .cv p {
   padding: 0.5rem;
 }
 
+.personlige_oplysninger {
+  font-size: 0.8rem;
+  order: 2;
+}
+
 /* -------------------------------------media-queries----------------------------------------------- */
+
+@media (min-width: 300px) {
+  .top_cv {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .personlige_oplysninger {
+    text-align: end;
+    padding-right: 1rem;
+    font-size: 0.8rem;
+    order: 2;
+  }
+}
 
 @media (min-width: 500px) {
   h1 {
@@ -563,7 +605,7 @@ h3 {
   }
 
   main {
-    padding: 0 1rem 12rem 1rem;
+    padding: 0 1rem 10rem 1rem;
   }
 
   .portraet_ommig {
@@ -578,6 +620,10 @@ h3 {
 
   .cv {
     width: 80%;
+  }
+
+  .cv h3 {
+    font-size: 1.5rem;
   }
 
   #forside_tekst1_1 {
@@ -609,6 +655,26 @@ h3 {
   }
 }
 
+@media (min-width: 700px) {
+  .cv section {
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+
+  .cv h4 {
+    grid-column: 1/2;
+    padding-top: 0.5rem;
+  }
+
+  .cv section {
+    padding-top: 1.3rem;
+  }
+
+  .cv_right {
+    grid-column: 2/3;
+  }
+}
+
 @media (min-width: 800px) {
   h1 {
     padding-bottom: 8rem;
@@ -616,7 +682,7 @@ h3 {
   }
 
   main {
-    padding: 0 2rem 12rem 2rem;
+    padding: 0 2rem 7rem 2rem;
   }
 
   .ommig_content {
@@ -631,6 +697,23 @@ h3 {
   }
 
   .personlig_tekst {
+    grid-column: 2/3;
+  }
+
+  .cv section {
+    display: grid;
+    grid-template-columns: 35% 65%;
+  }
+
+  .cv h4 {
+    font-size: 1.2rem;
+  }
+
+  .cv h2 {
+    font-size: 2rem;
+  }
+
+  .cv_right {
     grid-column: 2/3;
   }
 
@@ -662,9 +745,19 @@ h3 {
     font-size: 9rem;
     font-weight: 800;
     position: absolute;
-    top: 72%;
+    top: 64%;
     left: 8%;
     padding: unset;
+  }
+
+  .footer_index {
+    padding: 0.5rem;
+    color: #b9b9b9;
+    position: absolute;
+    text-align: right;
+    top: 94.5%;
+    right: 1%;
+    font-size: 0.8rem;
   }
 }
 
@@ -681,7 +774,7 @@ h3 {
 
   #forside_tekst1_2 {
     color: #b9b9b9;
-    font-size: 7.5rem;
+    font-size: 7.2rem;
     font-weight: 800;
     position: absolute;
     top: 35%;
@@ -693,9 +786,23 @@ h3 {
     font-size: 10.5rem;
     font-weight: 800;
     position: absolute;
-    top: 78%;
+    top: 68%;
     left: 8%;
     padding: unset;
+  }
+
+  .footer_index {
+    padding: 0.3rem;
+    color: #b9b9b9;
+    position: absolute;
+    text-align: right;
+    top: 102%;
+    right: 1%;
+    font-size: 0.9rem;
+  }
+
+  .cv h2 {
+    font-size: 3rem;
   }
 }
 
@@ -727,5 +834,15 @@ h3 {
     top: 78%;
     left: 8%;
     padding: unset;
+  }
+
+  .footer_index {
+    padding: 0.3rem;
+    color: #b9b9b9;
+    position: absolute;
+    text-align: right;
+    bottom: 1%;
+    right: 1%;
+    font-size: 1rem;
   }
 }
