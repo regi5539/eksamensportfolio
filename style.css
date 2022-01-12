@@ -217,6 +217,18 @@ p {
   height: 100%;
 }
 
+.opgaver a:visited {
+  text-decoration: underline;
+}
+.opgaver a:link {
+  padding-top: 1rem;
+  text-decoration: underline;
+}
+.opgaver a:hover {
+  color: #d119e2;
+  font-size: unset;
+}
+
 .opg_1 {
   grid-row: 1/2;
 }
@@ -243,6 +255,15 @@ p {
 
 .opg_7 {
   grid-row: 13/14;
+}
+
+.opgaver_billeder {
+  display: flex;
+  flex-flow: wrap;
+  padding-top: 1rem;
+}
+.opgaver_billeder img {
+  max-width: 100%;
 }
 
 /* button styling */
@@ -783,6 +804,10 @@ p {
 
   .footer_index {
     font-size: 0.9rem;
+  }
+
+  .opgaver_billeder img {
+    max-width: 50%;
   }
 }
 
